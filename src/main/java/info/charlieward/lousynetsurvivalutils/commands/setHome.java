@@ -22,13 +22,9 @@ public class setHome implements CommandExecutor {
             UUID playerUUID = player.getUniqueId();
             String jedisKey = playerUUID + "_Home_Coords";
             Location playerCoords = player.getLocation();
-            System.out.println(playerCoords);
             int posX = (int) playerCoords.getX();
-            System.out.println(posX);
             int posY = (int) playerCoords.getY();
-            System.out.println(posY);
             int posZ = (int) playerCoords.getZ();
-            System.out.println(posZ);
             String jedisPosition = posX + "," + posY + "," + posZ;
             plugin.jedis.set(jedisKey, jedisPosition);
             player.sendMessage(ChatColor.BLUE + "[LousyNet] " + ChatColor.WHITE + "Home warp has been updated. This has overwritten the last home position.");
