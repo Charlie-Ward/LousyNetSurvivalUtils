@@ -31,6 +31,7 @@ public class Home implements CommandExecutor {
                 String[] splitCoords = homeCoords.split(",");
                 Location homeLoc = new Location(Bukkit.getWorld("survival"), getCoordInt(splitCoords[0]), getCoordInt(splitCoords[1]), getCoordInt(splitCoords[2]));
                 player.sendMessage(ChatColor.BLUE + "[LousyNet] " + ChatColor.WHITE + "Teleporting to your home");
+                System.out.println(homeLoc);
                 player.teleport(homeLoc);
             }
         }
@@ -40,6 +41,7 @@ public class Home implements CommandExecutor {
     public static int getCoordInt(String input) {
         try{
             int number = Integer.parseInt(input);
+            System.out.println(number);
             return number;
         }
         catch (NumberFormatException ex){
