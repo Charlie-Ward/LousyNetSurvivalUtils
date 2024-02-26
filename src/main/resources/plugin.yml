@@ -4,4 +4,7 @@ main: info.charlieward.lousynetsurvivalutils.LousyNetSurvivalUtils
 api-version: '1.17'
 authors:
   - LousyBoi
-
+commands:
+  Home:
+    description: TPs you to your set home
+    usage: /home
