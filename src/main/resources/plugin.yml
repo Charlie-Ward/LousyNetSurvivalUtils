@@ -8,3 +8,6 @@ commands:
   Home:
     description: TPs you to your set home
     usage: /home
+  setHome:
+    description: Sets your home to current location
+    usage : /setHome
