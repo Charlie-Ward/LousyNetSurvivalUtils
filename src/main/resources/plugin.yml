@@ -2,3 +2,6 @@ name: LousyNet-SurvivalUtils
 version: '${project.version}'
 main: info.charlieward.lousynetsurvivalutils.LousyNetSurvivalUtils
 api-version: '1.17'
+authors:
+  - LousyBoi
+
