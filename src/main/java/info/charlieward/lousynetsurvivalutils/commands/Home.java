@@ -29,7 +29,7 @@ public class Home implements CommandExecutor {
                 System.out.println(playerUIID); //Debug need to remove
             } else {
                 String[] splitCoords = homeCoords.split(",");
-                Location homeLoc = new Location(Bukkit.getWorld("survival"), getCoordInt(splitCoords[0]), getCoordInt(splitCoords[1]), getCoordInt(splitCoords[2]));
+                Location homeLoc = new Location(Bukkit.getWorld("world"), getCoordInt(splitCoords[0]), getCoordInt(splitCoords[1]), getCoordInt(splitCoords[2]));
                 player.sendMessage(ChatColor.BLUE + "[LousyNet] " + ChatColor.WHITE + "Teleporting to your home");
                 System.out.println(homeLoc);
                 player.teleport(homeLoc);
