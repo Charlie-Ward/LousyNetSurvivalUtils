@@ -39,7 +39,6 @@ public class Home implements CommandExecutor {
     public static int getCoordInt(String input) {
         try{
             int number = Integer.parseInt(input);
-            System.out.println(number);
             return number;
         }
         catch (NumberFormatException ex){
