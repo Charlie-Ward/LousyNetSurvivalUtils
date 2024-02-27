@@ -24,7 +24,7 @@ public class Home implements CommandExecutor {
             UUID playerUIID = player.getUniqueId();
             String jedisKey = playerUIID + "_Home_Coords";
             String homeCoords = plugin.jedis.get(jedisKey);
-            if (homeCoords == null) {
+            if (homeCoords == null || homeCoords.isEmpty()) {
                 player.sendMessage(ChatColor.BLUE + "[LousyNet] " + ChatColor.WHITE + "You need to set a home first use /setHome to do this");
             } else {
                 String[] splitCoords = homeCoords.split(",");
